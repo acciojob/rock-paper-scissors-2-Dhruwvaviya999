@@ -8,6 +8,34 @@
 
 <body>
 	<!-- the entire body must be written by student -->
+	<div class="main-container">
+		<div class="inputs">
+			<div>
+				<label for="game-number">Number of Rounds: </label>
+				<input id="game-number" type="number" data-ns-test="game-number" />
+			</div>
+			<button onclick="handlePlayBtn()" id="play-game" data-ns-test="play-game">Play</button>
+		</div>
+		<div class="game-container">
+			<div class="game-info">
+				<div class="points">
+					<div data-ns-test="user-points">User Points: 0</div>
+					<div data-ns-test="computer-points">Computer Points: 0</div>
+				</div>
+				<div id="computer-choose" data-ns-test="computer-choose">
+					Computer Chooses: SCISSORS/PAPER/ROCK
+				</div>
+				<div id="rounds-left" data-ns-test="rounds-left">Round Left: 1</div>
+				<div id="round-result" data-ns-test="round-result">WON/LOSE/TIE</div>
+				<div data-ns-test="game-result">WON/LOSE/TIE</div>
+			</div>
+			<div class="options-container">
+				<div onclick="handleGame(event)" id="rock" class="user-choices" data-ns-test="rock">ROCK</div>
+				<div onclick="handleGame(event)" id="paper" class="user-choices" data-ns-test="paper">PAPER</div>
+				<div onclick="handleGame(event)" id="scissors" class="user-choices" data-ns-test="scissors">SCISSORS</div>
+			</div>
+		</div>
+	</div>
     <script type="text/javascript" src="./script.js">
 </script>
 
